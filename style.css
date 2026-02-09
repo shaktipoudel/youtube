@@ -1,0 +1,96 @@
+/* ===== UPLOAD PAGE ===== */
+.upload-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 35px 30px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: center;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.upload-container h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+
+/* ===== FORM ===== */
+.upload-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input fields */
+.upload-container input[type="text"],
+.upload-container input[type="file"] {
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background: rgba(255,255,255,0.85);
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.upload-container input[type="text"]:focus,
+.upload-container input[type="file"]:focus {
+    outline: none;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(255,255,255,0.6);
+}
+
+/* Labels */
+.upload-container label {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Button */
+.upload-container button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.upload-container button:hover {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .upload-container {
+        margin: 40px 10px;
+        padding: 25px 15px;
+    }
+
+    .upload-container h2 {
+        font-size: 24px;
+    }
+
+    .upload-container button {
+        font-size: 16px;
+    }
+}

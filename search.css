@@ -1,0 +1,38 @@
+/* ===== SEARCH BOX ===== */
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 250px;
+    font-size: 14px;
+}
+
+#suggestions {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.suggestion-item:hover {
+    background: #f2f2f2;
+}
